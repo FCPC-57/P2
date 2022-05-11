@@ -4,23 +4,40 @@
 
         <head>
             <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <script src="https://kit.fontawesome.com/1513f99256.js" crossorigin="anonymous"></script>
-            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
             <title>Booki</title>
         </head>
 
         <body> <!-- Début du body -->
+            <div id="main_cadre">
             <header> <!-- Début du header -->
-                <div id="logo">
-                    <img src="images/logo/Booki@3x.png" alt="Logo Booki">
+              <nav class="size-nav">
+                <div class="size-liens flex-between">
+                  <div class="mobile-titre-para">
+                    <img
+                      class="marg-logo"
+                      src="images/logo/Booki@3x.png"
+                      alt="Logo Booki"
+                      width="120"
+                      height="50"
+                    />
                 </div>
-                <nav id="menu"> <!-- Début du menu -->
-                    <ul>
-                        <li><a class="effet_menu" href="#hebergements">Hébergements</a></li>
-                        <li><a class="effet_menu" href="#activites">Activités</a></li>
-                    </ul>
-                </nav> <!-- Fin du menu -->
+                  <div class="size-lien12 flex-centre">
+                    <div class="size-lien size-lien-mobile flex-centre bordure-nav">
+                      <a class="color-lien2 decoration-none" href="#hebergements"
+                        >Hébergements</a
+                      >
+                    </div>
+                    <div class="size-lien size-lien-mobile flex-centre bordure-nav">
+                      <a class="color-lien2 decoration-none" href="#activites"
+                        >Activités</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </nav> <!-- Fin du menu -->
             </header> <!-- Fin du header -->
 
         <section> <!-- Début de la section de recherche -->
@@ -37,9 +54,41 @@
                     </div>
                     </div>
             </div>
-              <!-- Filtres de recherche -->
-        
-            <div id="filtres">
+                
+            <div id="filtres"> <!-- Filtres de recherche -->   
+                <div id="filtre_titre">
+                    <p>Filtres</p>
+                  </div>
+                  <div class="filtre_style over">
+                    <div>
+                      <i class="fas fa-money-bill-wave logo_filtre" aria-hidden="true"></i>
+                    </div>
+                    <a class="nocolor" href="#">Economique</a>
+                  </div>
+                  <div class="filtre_style over">
+                    <div>
+                      <i class="fas fa-child logo_filtre" aria-hidden="true"></i>
+                    </div>
+                    <a class="nocolor" href="#">Familial</a>
+                  </div>
+                  <div class="over filtre_style">
+                    <div>
+                      <i class="fas fa-heart logo_filtre" aria-hidden="true"></i>
+                    </div>
+                    <a class="nocolor" href="#">Romantique</a>
+                  </div>
+                  <div class="filtre_style over">
+                    <div>
+                      <i class="fas fa-dog logo_filtre" aria-hidden="true"></i>
+                    </div>
+                    <a class="nocolor" href="#">Animaux autorisés</a>
+                  </div>
+                </div>
+                <!-- fin filtre debut tex info -->
+                <div id="info">
+                  <div id="info_logo">
+                    <i class="fas fa-info" aria-hidden="true"></i>
+                  </div>
                 <div>
                   <P>Plus de 500 logements sont disponibles dans cette ville</P>
                 </div>
@@ -57,7 +106,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                       </div>
                     </div>
@@ -186,28 +235,46 @@
             <div id="activites"> <!-- Début de la section des activités -->
                 <h1>Activités à Marseille</h1>
 
-                <article>
-
+                <article id="activitecol"><img class="img_activite" src="/images/activites/4_small/vieuxport.jpg"
+                    alt="Vieux port">
+                  <div class="activite_text">
+                    <h4>Vieux port</h4>
+                  </div>
                 </article>
 
-                <article>
-
+                <article id="activitedouble"><img class="img_activite" src="/images/activites/4_small/fortdepomegues.jpg"
+                    alt="Fort de Pomègues">
+                  <div class="activite_text">
+                    <h4>Vieux port</h4>
+                  </div>
                 </article>
 
-                <article>
-
+                <article id="activitedouble"><img class="img_activite" src="/images/activites/4_small/ilesdufrioul.jpg"
+                    alt="Iles du Frioul">
+                  <div class="activite_text">
+                    <h4>Vieux port</h4>
+                  </div>
                 </article>
 
-                <article>
-
+                <article id="activitecol"><img class="img_activite" src="/images/activites/4_small/parcnationaldescalanques.jpg"
+                    alt="Parc National des Calanques">
+                  <div class="activite_text">
+                    <h4>Vieux port</h4>
+                  </div>
                 </article>
 
-                <article>
-
+                <article id="activitedouble"><img class="img_activite" src="/images/activites/4_small/notredamedelagarde.jpg"
+                    alt="Notre Dame de la Garde">
+                  <div class="activite_text">
+                    <h4>Vieux port</h4>
+                  </div>
                 </article>
 
-                <article>
-
+                <article id="activitedouble"><img class="img_activite" src="/images/activites/4_small/parclongchamp.jpg"
+                    alt="Parc Longchamp">
+                  <div class="activite_text">
+                    <h4>Vieux port</h4>
+                  </div>
                 </article>
 
             </div>
@@ -236,4 +303,6 @@
 
         </body> <!-- Fin du Body -->
 
-    </html>
+    </div>
+
+</html>

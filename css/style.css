@@ -1,0 +1,120 @@
+/* Définition des polices personnalisées */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap');
+
+/* Mise en place du fonctionnement général */
+
+* {
+  box-sizing: border-box;
+ /* box-sizing est appliqué à tous les éléments */
+ }
+
+/* Body */
+
+body {
+    font-family: "Raleway";
+    max-width: 1400px;
+    margin: auto;
+}
+
+.flex-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column-centre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.decoration-none {
+  text-decoration: none;
+}
+.bordure-none {
+  border: none;
+}
+.texte-gras {
+  font-weight: bold;
+}
+.color-bleu {
+  color: #0065fc;
+}
+.color-bleu-clair {
+  color: #deebff;
+}
+.color-gris {
+  color: #f2f2f2;
+}
+.back-bleu {
+  background-color: #0065fc;
+}
+.back-bleu-clair {
+  background-color: #deebff;
+}
+.back-gris {
+  background-color: #f2f2f2;
+}
+
+/* Nav */
+
+.size-nav {
+  height: auto;
+}
+.size-liens {
+  width: 100%;
+}
+.size-lien12 {
+  margin-left: 60%;
+}
+.size-lien {
+  width: 140px;
+  height: 99px;
+}
+.color-lien2 {
+  color: black;
+}
+.bordure-nav {
+  border-top: 1px solid transparent;
+}
+.bordure-nav:hover {
+  border-top: 1px solid #0065fc;
+  cursor: pointer;
+}
+.bordure-nav:hover > a {
+  color: #0065fc;
+}
+.marg-logo {
+  margin-bottom: 7px;
+}
+
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  padding: 25px 80px 25px 80px;
+  
+}
+
+/* Version Mobile */
